@@ -1,0 +1,46 @@
+.wd-container {
+    max-width: 620px;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+.wd-bookmarks {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.wd-bookmark-container {
+    border-bottom: 1px;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.wd-profile-img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+
+.wd-bookmark-content {
+    margin-left: 12px;
+}
+#bookmark-author-at {
+    flex:1;
+    justify-content: start;
+}
+.wd-bookmark-img-box {
+    margin-top: 12px;
+    border: 1px solid lightgray;
+    max-width: 506px;
+    border-radius: 20px;
+}
+.wd-bookmark-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 264px;
+    width: 504px;
+}

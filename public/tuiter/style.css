@@ -1,0 +1,107 @@
+.wd-container {
+
+}
+.wd-profile-img-holder {
+    margin-left: 16px;
+    margin-top: 12px;
+}
+.wd-authorbox {
+    display: flex;
+    flex-direction: row;
+}
+.wd-author-name {
+    color: white;
+    margin-right:5px;
+    display: flex;
+    flex: 1 1;
+}
+.wd-author-name-box{
+    display: flex;
+    flex-direction: row;
+}
+.wd-post-timestamp {
+    margin-left: 5px;
+    color: lightgray;
+    font-size: 13px;
+}
+.wd-more {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-self: center;
+    color: white;
+    padding: 0px 10px;
+}
+.wd-more-ptr{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-self: center;
+    color: rgb(29,161,242);
+    padding: 0px 10px;
+}
+.wd-title {
+    color: white;
+    font-size: 20px;
+}
+.wd-img-title {
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.wd-img-brief {
+    color: lightgray;
+    padding: 12px;
+    font-size: 15px;
+}
+.wd-plaintext {
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+.wd-text-at {
+    color: lightgray;
+    font-size: 13px;
+}
+.wd-header {
+    border-bottom: 1px;
+    border-bottom-color: lightgray;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+}
+.wd-title-box {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-action-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    padding-inline-start: 10px;
+    padding-inline-end: 30px;
+}
+.wd-action-container {
+    padding-left: 0px;
+}
+.wd-icon-sm {
+    align-self: center;
+    color: white;
+    padding: 0px 10px;
+}
+.wd-action-list .fa-comment {
+    margin-right: 12px;
+}
+.wd-action-list .fa-retweet {
+    margin-right: 12px;
+}
+.wd-action-list .fa-heart {
+    margin-right: 12px;
+}
