@@ -12,63 +12,124 @@
 </head>
 <body style="background-color: WHITE;border-color:lightgray;margin-left: 16px">
     <a href="javascript:history.back()">Go Back</a>
+    <div>
+        <div class="d-block d-sm-none fa-2x">XS</div>
+        <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+        <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+        <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+        <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+        <div class="d-none d-xxl-block fa-2x">XXL</div>
+    </div>
     <div class="d-flex flex-row flex-nowrap  justify-content-center">
 <!--        <div class="col-1"></div>-->
-        <div class="p-2 flex-shrink-1 flex-grow-1">
+
+        <div class="p-2 flex-shrink-1 flex-grow-1 d-none d-xl-inline d-xxl-inline d-lg-none">
             <div class="wd-sidebar-left ms-auto me-0">
-            <ul class="nav nav-pills flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <i class="fa-brands fa-twitter fa-lg"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">
-                        <i class="fa-sharp fa-solid fa-house-chimney fa-lg"></i>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="explore/index.html">
-                        <i class="fa-solid fa-hashtag fa-lg"></i>Explore</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="notifications.html">
-                        <i class="fa-sharp fa-solid fa-bell fa-lg"></i>Notifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="messages.html">
-                        <i class="fa-solid fa-message fa-lg"></i>Messages</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bookmarks/index.html">
-                        <i class="fa-solid fa-bookmark fa-lg"></i>Bookmarks</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lists.html">
-                        <i class="fa-solid fa-list fa-lg"></i>Lists</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="profile.html">
-                        <i class="fa-solid fa-user fa-lg"></i>Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="more.html">
-                        <i class="fas fa-ellipsis-h fa-lg"></i>More</a>
-                </li>
-                <a class="wd-sidebar-tuit" href="tuit.html">Tweet</a>
-            </ul>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <i class="fa-sharp fa-solid fa-house-chimney fa-lg"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="explore/index.html">
+                            <i class="fa-solid fa-hashtag fa-lg"></i>Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notifications.html">
+                            <i class="fa-sharp fa-solid fa-bell fa-lg"></i>Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html">
+                            <i class="fa-solid fa-message fa-lg"></i>Messages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookmarks/index.html">
+                            <i class="fa-solid fa-bookmark fa-lg"></i>Bookmarks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lists.html">
+                            <i class="fa-solid fa-list fa-lg"></i>Lists</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fa-solid fa-user fa-lg"></i>Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="more.html">
+                            <i class="fas fa-ellipsis-h fa-lg"></i>More</a>
+                    </li>
+
+                </ul>
+                <div class="wd-sidebar-tuit mt-2">
+                    <a class="wd-sidebar-tuit-btn text-decoration-none" href="tuit.html">Tweet</a>
+                </div>
+
+            </div>
         </div>
+
+        <div class="p-2 flex-shrink-1 flex-grow-1 d-block d-xl-none">
+            <div class="wd-sidebar-left ms-auto">
+                <ul class="nav nav-pills flex-column me-3"  style="width: 50px;margin-left: auto;margin-right: 0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-brands fa-twitter fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">
+                            <i class="fa-sharp fa-solid fa-house-chimney fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="explore/index.html">
+                            <i class="fa-solid fa-hashtag fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="notifications.html">
+                            <i class="fa-sharp fa-solid fa-bell fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html">
+                            <i class="fa-solid fa-message fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bookmarks/index.html">
+                            <i class="fa-solid fa-bookmark fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lists.html">
+                            <i class="fa-solid fa-list fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="fa-solid fa-user fa-lg"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="more.html">
+                            <i class="fas fa-ellipsis-h fa-lg"></i></a>
+                    </li>
+
+                </ul>
+                <div class="wd-sidebar-tuit mt-2 ms-auto me-0 flex-shrink-1" style="width:75px;">
+                    <a class="wd-sidebar-tuit-btn text-decoration-none" href="tuit.html">Tweet</a>
+                </div>
+            </div>
         </div>
         <div class="p-2 flex-shrink-3 flex-grow-3">
-            <div class="wd-main-container">
-                <div class="wd-search-box">
-                    <form class="wd-search-bar">
-                        <i class="fas fa-search fa-lg" id="wd-search-icon"></i>
-                        <input class="wd-search-input" type="text" placeholder="Search"/></input>
+            <div class="wd-main-container ms-1 me-1">
+                <div class="wd-search-box w-100 mb-3">
+                    <form class="wd-search-bar w-100 bg-opacity-10 me-3 rounded-pill">
+                        <i class="fas fa-search fa-lg ps-3" id="wd-search-icon"></i>
+                        <input class="wd-search-input ps-3" type="text" placeholder="Search"/></input>
                     </form>
                     <i class="fas fa-cog fa-lg" id="wd-setting-icon"><a href="explore-settings.html"></a></i>
                 </div>
 
-                <ul class="nav nav-tabs flex-row">
+                <ul class="wd-labels nav nav-tabs flex-row">
                     <li class="nav-item">
                         <a class="nav-link active" href="#">For you</a>
                     </li>
@@ -81,7 +142,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Sports</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-none d-sm-none d-md-inline">
                         <a class="nav-link" href="#">Entertainment</a>
                     </li>
                 </ul>
@@ -92,26 +153,26 @@
                 </div>
 
 
-                <div class="wd-posts-container">
+                <div class="wd-posts-container border border-solid border-opacity-75 p-0">
 
-                    <ul class="wd-posts">
-                        <li class="wd-post-suggest">
+                    <ul class="wd-posts p-0">
+                        <li class="wd-post-suggest p-1 ps-3">
                             <div class="wd-post-topic">Trending in Science</div>
                             <div class="wd-post-title">Starship</div>
                             <div class="wd-post-retweets">55.5k Tuits</div>
                         </li>
-                        <li class="wd-post-suggest">
+                        <li class="wd-post-suggest p-1 ps-3">
                             <div class="wd-post-topic">Where does it come from?</div>
                             <div class="wd-post-title">Contrary to popular belief</div>
                             <div class="wd-post-retweets">55.5k Tuits</div>
                         </li>
-                        <li class="wd-post-item">
+                        <li class="wd-post-item d-flex flex-row flex-nowrap justify-content-between p-1 ps-3">
                             <div class="wd-post-content">
                                 <div class="wd-post-authorbox">
-                                    <i class="fab fa-google"></i>
+                                    <i class="fab fa-google pe-1"></i>
                                     <div class="wd-post-author">The New York
                                         Times<span class="wd-post-timestamp"> · Yesterday</span></div>
-                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-check-circle ps-2"></i>
                                 </div>
 
 
@@ -119,27 +180,27 @@
 
                             </div>
                             <div class="wd-post-aside">
-                                <img class="wd-post-img" src="../source/profile.jpg"></img>
+                                <img class="wd-post-img" src="../../source/profile.jpg"></img>
                             </div>
                         </li>
 
-                        <li class="wd-post-item">
+                        <li class="d-post-item d-flex flex-row flex-nowrap justify-content-between p-1 ps-3">
                             <div class="wd-post-content">
                                 <div class="wd-post-topic">Trending in Science</div>
                                 <div class="wd-post-title">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                             </div>
                             <div class="wd-post-aside">
-                                <img class="wd-post-img" src="../source/profile2.jpg"></img>
+                                <img class="wd-post-img" src="../../source/profile2.jpg"></img>
                             </div>
                         </li>
 
-                        <li class="wd-post-item">
+                        <li class="d-post-item d-flex flex-row flex-nowrap justify-content-between p-1 ps-3">
                             <div class="wd-post-content">
                                 <div class="wd-post-authorbox">
-                                    <i class="fab fa-google"></i>
+                                    <i class="fab fa-google pe-1"></i>
                                     <div class="wd-post-author">The New York
                                         Times<span class="wd-post-timestamp"> · Yesterday</span></div>
-                                    <i class="fas fa-check-circle"></i>
+                                    <i class="fas fa-check-circle ps-2"></i>
                                 </div>
 
 
@@ -147,11 +208,11 @@
 
                             </div>
                             <div class="wd-post-aside">
-                                <img class="wd-post-img" src="../source/profile3.png"></img>
+                                <img class="wd-post-img" src="../../source/profile3.png"></img>
                             </div>
                         </li>
 
-                        <li class="wd-post-suggest">
+                        <li class="wd-post-suggest p-1 ps-3">
                             <div class="wd-post-topic">Where does it come from?</div>
                             <div class="wd-post-title">Contrary to popular belief</div>
                             <div class="wd-post-retweets">55.5k Tuits</div>
@@ -162,10 +223,10 @@
 
             </div>
         </div>
-        <div class="p-2 flex-shrink-1 flex-grow-1">
+        <div class="p-2 flex-shrink-1 flex-grow-1 d-none d-lg-inline d-xl-inline d-xxl-inline">
             <div class="wd-sidebar-right">
 
-                <div class="list-group w-auto">
+                <div class="list-group w-auto text-nowrap">
                     <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2" aria-current="true">
                         <strong>Who to follow</strong>
                     </a>
@@ -180,7 +241,8 @@
                             <button type="button" class="btn btn-primary rounded-pill">Follow</button>
                         </div>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2" aria-current="true">
+                    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-2"
+                       aria-current="true">
                         <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy" alt="twbs" width="45" height="45"
                              class="rounded-circle flex-shrink-0">
                         <div class="d-flex gap-2 w-100 justify-content-between">
