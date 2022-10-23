@@ -5,14 +5,14 @@ const NavigationSidebar = (status) => {
         <div style="height: 30px;width: 30px"><i class="fab fa-twitter fa-lg me-2"></i></div> 
         <p class="d-none d-lg-none d-xl-inline m-0"></p>
     </a>
-    ${status ==='home' ? `<a class="list-group-item active  d-flex flex-row p-3" href="../HomeScreen/index.html">`
-        :`<a class="list-group-item d-flex flex-row p-3" href="../HomeScreen/index.html">`}
+    ${status ==='home' ? `<a class="list-group-item active  d-flex flex-row p-3" href="#">`
+        :`<a class="list-group-item d-flex flex-row p-3" href="#">`}
         <div style="height: 30px;width: 30px"><i class="fa-sharp fa-solid fa-house-chimney fa-lg me-2"></i></div>
         
         <p class="d-none d-lg-none d-xl-inline m-0">Home</p>
     </a>
-    ${status ==='explore' ? `<a class="list-group-item active  d-flex flex-row p-3" href="../explore/index.html">`
-        :`<a class="list-group-item d-flex flex-row p-3" href="../explore/index.html">`}
+    ${status ==='explore' ? `<a class="list-group-item active  d-flex flex-row p-3" href="#">`
+        :`<a class="list-group-item d-flex flex-row p-3" href="#">`}
         <div style="height: 30px;width: 30px"><i class="fa-solid fa-hashtag fa-lg me-2"></i></div> 
         
         <p class="d-none d-lg-none d-xl-inline m-0">Explore</p>

@@ -1,7 +1,7 @@
 import PostItem from "./PostItem.js";
 import posts from "./posts.js"
 
-const PostList = () => {
+const Index = () => {
     return (`
        <ul class="list-group">
            <!-- continue here -->
@@ -13,4 +13,4 @@ const PostList = () => {
        </ul>
 `); }
 
-export default PostList ;
+export default Index ;

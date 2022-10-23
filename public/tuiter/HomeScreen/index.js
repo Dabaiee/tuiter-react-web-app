@@ -1,6 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostSummaryList  from "../PostSummaryList/index.js";
-import PostList from "../PostList/PostList.js";
+import Index from "../PostList";
 
 function exploreComponent() {
     $('#wd-home').append(`
@@ -12,7 +12,7 @@ function exploreComponent() {
    </div>
    <div class="col-10 col-lg-7 col-xl-6 text-white">
 <!--    <h3>HomeComponent</h3>-->
-    ${PostList()}
+    ${Index()}
    </div>
    <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 text-white">
 <!--    <h3>WhoToFollowList </h3>-->
