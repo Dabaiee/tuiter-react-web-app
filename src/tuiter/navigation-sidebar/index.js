@@ -68,14 +68,12 @@ const NavigationSidebar = () => {
                     Lists
                 </div>
             </a>
-            <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
-
+            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <div className="d-flex flex-row">
                     <FontAwesomeIcon className=" align-self-center pe-2" icon={faUser} style={{height:25,width:25}}/>
                     Profile
                 </div>
-            </a>
+            </Link>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
                 <div className="d-flex flex-row">
