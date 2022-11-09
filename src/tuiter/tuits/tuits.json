@@ -6,19 +6,14 @@
     "handle": "hbomax",
     "time": "Oct 14",
     "tuit": "Sometimes family ties don’t bind. Catch up on the first eight episodes of #HouseoftheDragon on HBO Max.",
-    "imageView": "https://pbs.twimg.com/media/FfDVJceVEAE6ex3?format=jpg&name=small",
     "imageAuthor": "hbomax",
     "imageTitle": "",
     "imageDesc": "#HouseoftheDragon is streaming on HBO Max.#TheWhiteLotus Sicily premieres October 30.",
     "imageLink": "https://twitter.com/hbomax/status/1580997845431115776/photo/1",
-    "retweetAvatar":"",
-    "retweetUserName":"",
-    "retweetHandle":"",
-    "retweetTime":"",
-    "retweetText":"",
     "comments": "4.2k",
     "retuit": "3.5k",
-    "likes": "37.5k"
+    "likes": "37.5k",
+    "liked": true
   },
   {
     "_id": 124,
@@ -27,19 +22,14 @@
     "handle": "CNN",
     "time": "Oct 8",
     "tuit": "More than 4,000 current and former law school applicants received the exciting news that they had been accepted to Northeastern University’s law school last week. There was just one problem: The acceptance letters were sent by mistake.",
-    "imageView": "https://law.northeastern.edu/wp-content/uploads/2021/03/knowles.jpeg",
     "imageAuthor": "cnn.com",
     "imageTitle": "Northeastern’s law school sent out 4,000 acceptance letters by mistake ...",
     "imageDesc": "More than 4,000 current and former law school applicants received the exciting news that they had been accepted to Northeastern University’s law school last week. ",
     "imageLink": "https://t.co/YOIq0CFzTi",
-    "retweetAvatar":"",
-    "retweetUserName":"",
-    "retweetHandle":"",
-    "retweetTime":"",
-    "retweetText":"",
     "comments": "734",
     "retuit": "3.5k",
-    "likes": "7.5k"
+    "likes": "7.5k",
+    "liked": true
   },
   {
     "_id": 125,
@@ -47,8 +37,7 @@
     "userName": "Elon Musk",
     "handle": "elonmusk",
     "time": "Oct 17",
-    "tuit": "Exceptionally well-said",
-    "imageView": "",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars",
     "imageAuthor": "",
     "imageTitle": "",
     "imageDesc": "",
@@ -60,6 +49,7 @@
     "retweetText":"My latest op-ed for Newsweek: \n\nNeocons and the Woke Left Are Joining Hands and Leading Us to Woke War III\n\nhttps://newsweek.com/neocons-woke-left-are-joining-hands-leading-us-woke-war-iii-opinion-1748947",
     "comments": "10.2k",
     "retuit": "10.1k",
-    "likes": "58.4k"
+    "likes": "58.4k",
+    "liked": false
   }
 ]

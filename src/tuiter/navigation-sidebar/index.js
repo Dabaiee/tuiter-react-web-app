@@ -26,9 +26,6 @@ const NavigationSidebar = () => {
                     Tuiter
                 </div>
             </Link>
-            <Link to="/" className="list-group-item">
-                Labs
-            </Link>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
                 <div className="d-flex flex-row">
                     <FontAwesomeIcon className=" align-self-center pe-2" icon={faHome} style={{height:25,width:25}}/>

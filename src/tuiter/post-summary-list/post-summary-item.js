@@ -22,21 +22,11 @@ const PostSummaryItem = (
                     </div>
 
                 </div>
-                <div className="wd-post-title">{post.title}</div>
+                <div className="wd-post-title">{post.tuit}</div>
             </div>
             <div className="wd-post-aside">
                 <img className="wd-post-img rounded-3 mt-2 mb-2" src={`${post.image}`} width="75" height="75"></img>
             </div>
-            {/*<div className="row">*/}
-            {/*    <div className="col-10">*/}
-            {/*        <div>{post.userName} . {post.time}</div>*/}
-            {/*        <div className="fw-bolder">{post.topic}</div>*/}
-            {/*        <div>{post.title}</div>*/}
-            {/*    </div>*/}
-            {/*    <div className="col-2">*/}
-            {/*        <img width={70} className="rounded-3 mt-2 mb-2" src={`/images/${post.image}`}/>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </li>
     );
 };

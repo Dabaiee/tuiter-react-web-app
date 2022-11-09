@@ -34,7 +34,7 @@ const PostItem = (
             <div className="wd-bookmark-aside">
                 <div className="wd-profile-img-holder ms-1 me-3">
                     <img className="wd-profile-img rounded-circle" height="45px" width="45px"
-                         src={`${post.avatarIcon}`}></img>
+                         src={`${post.image}`}></img>
                 </div>
             </div>
             <div className="wd-bookmark-content">
@@ -53,13 +53,13 @@ const PostItem = (
                 <p className="wd-plaintext">
                     {post.text}
                 </p>
-                <div className={`wd-bookmark-img-box rounded ${post.image.length< 1? 'd-none': ''}`} style={{border:"solid" +
+                <div className={`wd-bookmark-img-box rounded ${post.imageView.length< 1? 'd-none': ''}`} style={{border:"solid" +
                         " 1px" +
                         " lightgray"}}>
                     <div className="wd-bookmark-img-holder">
                         <a href="{post.imageLink}">
                             <img className="wd-bookmark-img rounded-top" width="100%" height="100%"
-                                 src={`${post.image}`}></img></a>
+                                 src={`${post.imageView}`}></img></a>
                     </div>
                     <div className="card-body p-3">
                         <div className="wd-img-title">{post.imageTitle}</div>
