@@ -11,25 +11,35 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
 import {createTuit} from "../tuits/tuits-reducer";
+import {updateProfile} from "./profile-reducer";
 
-const EditProfileComponent = (
-    {
-        profile= {
-            firstName: 'Jose', lastName: 'Annunziato', handle: 'jannunzi',
-            profilePicture: 'node.png', 	bannerPicture: 'banner.jpg',
-            bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements.',
-            website: 'youtube.com/webdevtv',
-            location: 'Boston, MA',	dateOfBirth: '7/7/1968',	dateJoined: '4/2009',
-            followingCount: 340,	followersCount: 223, tweetsCount: 6112
-        }
-    }
-) => {
-    let name= profile.firstName+" "+profile.lastName
+const EditProfileComponent = () => {
+
+    const userProfile = useSelector((state) => state.profile);
+    const initialData = {...userProfile};
+    const [profileState, setProfileState] = useState(userProfile);
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
+    const changesHandler = (event) => {
+        const fieldName = event.target.name;
+        const changedValue = event.target.value;
+        const newProfile = {
+            ...profileState,
+            [fieldName]: changedValue
+        }
+        setProfileState(newProfile);
+    }
+
     const saveHandler = () => {
+        dispatch(updateProfile(profileState));
         navigate('/tuiter/profile');
     }
+
+    const cancelEditHandler = () => {
+        dispatch(updateProfile(initialData));
+    }
+    let name= userProfile.firstName+" "+userProfile.lastName
     return(
         <div className="col mt-2">
             <div className="d-flex justify-content-between">
@@ -51,7 +61,7 @@ const EditProfileComponent = (
 
             </div>
             <div className="position-relative mt-2 mb-2">
-                <img className="w-100 opacity-50" src={`/images/${profile.bannerPicture}`}/>
+                <img className="w-100 opacity-50" src={`/images/${profileState.bannerPicture}`}/>
                 <div className="position-absolute top-50 start-50">
                     <button className="rounded-circle p-2" >
                         <FontAwesomeIcon icon={faCamera} style={{height:40,width:40}}></FontAwesomeIcon>
@@ -61,29 +71,43 @@ const EditProfileComponent = (
                     </button>
                 </div>
                 <img className="position-absolute wd-nudge-up text-white rounded-circle ms-3  opacity-50"
-                     style={{height:125,width:125,marginBottom:-65}} src={`/images/${profile.profilePicture}`}/>
+                     style={{height:125,width:125,marginBottom:-65}} src={`/images/${profileState.profilePicture}`}/>
                 <button className="position-absolute wd-nudge-up rounded-circle p-2" style={{marginBottom: -35,marginLeft:50}}>
                     <FontAwesomeIcon icon={faCamera} style={{height:40,width:40}}></FontAwesomeIcon>
                 </button>
             </div>
             <div className="content mt-5">
                 <form className="">
-                    Name
-                    <textarea placeholder={name}
-                              className="form-control">
-                    </textarea>
-                    Bio
-                    <textarea placeholder={profile.bio}
-                              className="form-control">
-                    </textarea>
-                    Location
-                    <textarea placeholder={profile.location}
-                              className="form-control">
-                    </textarea>
-                    Website
-                    <textarea placeholder={profile.website}
-                              className="form-control">
-                    </textarea>
+                    <div className="form-floating wd-top-margin-form">
+                        <input type="text" className="form-control text-bg-light" id="firstName" name="firstName"
+                               value={profileState.firstName} onChange={changesHandler}/>
+                        <label htmlFor="firstName">First Name</label>
+                    </div>
+                    <div className="form-floating mt-2">
+                        <input type="text" className="form-control text-bg-light" id="lastName" name="lastName"
+                               value={profileState.lastName} onChange={changesHandler}/>
+                        <label htmlFor="lastName">Last Name</label>
+                    </div>
+                    <div className="form-floating mt-2">
+                <textarea className="form-control h-auto text-bg-light" id="bio" name="bio" value={profileState.bio}
+                          onChange={changesHandler}/>
+                        <label htmlFor="bio">Bio</label>
+                    </div>
+                    <div className="form-floating mt-2">
+                        <input type="text" className="form-control text-bg-light" id="location" name="location" value={profileState.location}
+                               onChange={changesHandler}/>
+                        <label htmlFor="location">Location</label>
+                    </div>
+                    <div className="form-floating mt-2">
+                        <input type="text" className="form-control text-bg-light" id="website" name="website"
+                               value={profileState.website} onChange={changesHandler}/>
+                        <label htmlFor="website">Web Site</label>
+                    </div>
+                    <div className="form-floating mt-2">
+                        <input type="date" className="form-control text-bg-light" id="dateOfBirth" name="dateOfBirth"
+                               value={profileState.dateOfBirth} onChange={changesHandler}/>
+                        <label htmlFor="dateOfBirth">Date Of Birth</label>
+                    </div>
                     Switch to professional
                     <FontAwesomeIcon className="float-end" icon={faArrowRight}></FontAwesomeIcon>
                 </form>

@@ -4,9 +4,9 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList
     from "./who-to-follow-list";
 import {Route, Routes} from "react-router";
-import whoReducer
-    from "./reducers/who-reducer";
+import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import profileReducer from "./profile/profile-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import HomeComponent from "./home";
@@ -14,7 +14,7 @@ import HomeComponent2 from "./home/index2";
 import Profile from "./profile";
 import EditProfileComponent from "./profile/edit-profile";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer, profile:profileReducer}});
 
 function Tuiter() {
     return (
