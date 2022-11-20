@@ -2,7 +2,8 @@ import React from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheckCircle, faComment, faEllipsisH, faHeart, faRetweet, faUpload} from "@fortawesome/free-solid-svg-icons";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+// import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 
 
@@ -20,7 +21,24 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
+    }
+    const updateLikeDislike = (like) => {
+        let newPost
+
+        if (like) {
+            newPost = {
+                ...post,
+                liked: true,
+                likes: post.likes + 1
+            }
+        } else {
+            newPost = {
+                ...post,
+                dislikes: post.dislikes + 1
+            }
+        }
+        dispatch(updateTuitThunk(newPost))
     }
     return(
 
@@ -57,9 +75,12 @@ const TuitItem = (
                             {/*<i className="fas fa-retweet"></i>*/}
                             <FontAwesomeIcon icon={faRetweet}/>
                             {post.retuit}</li>
-                        <li className="wd-icon-sm"><a href="#"></a>
+                        <li className="wd-icon-sm" onClick={() => {
+                            updateLikeDislike(true);
+                        }}>
                             {/*<i className="fas fa-heart"></i>*/}
-                            <FontAwesomeIcon icon={faHeart} color={`${post.liked == true ? 'red' : ''}`}/>
+                            {/*<FontAwesomeIcon icon={faHeart} color={`${post.liked == true ? 'red' : ''}`}/>*/}
+                            <i className={`fa-solid fa-heart ${post.liked ? "text-danger" : ""}`}></i>
                             {post.likes}</li>
                         <li className="wd-icon-sm"><a href="#"></a>
                             {/*<i className="fas fa-upload"></i>*/}
