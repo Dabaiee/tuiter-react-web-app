@@ -14,7 +14,7 @@ const TuitItem = (
             "userName": "SpaceX",
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and",
-            "image": "tesla.png",
+            "image": "/images/sample.gif",
             "liked":false
         }
     }
