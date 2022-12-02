@@ -78,12 +78,14 @@ const TuitItem = (
                         <li className="wd-icon-sm" onClick={() => {
                             updateLikeDislike(true);
                         }}>
-                            {/*<i className="fas fa-heart"></i>*/}
-                            {/*<FontAwesomeIcon icon={faHeart} color={`${post.liked == true ? 'red' : ''}`}/>*/}
                             <i className={`fa-solid fa-heart ${post.liked ? "text-danger" : ""}`}></i>
                             {post.likes}</li>
+                        <li className="wd-icon-sm" onClick={() => {
+                            updateLikeDislike(false);
+                        }}>
+                            <i className={`fa-solid fa-thumbs-down`}></i>
+                            {post.dislikes}</li>
                         <li className="wd-icon-sm"><a href="#"></a>
-                            {/*<i className="fas fa-upload"></i>*/}
                             <FontAwesomeIcon icon={faUpload}/>
                         </li>
                     </ul>
