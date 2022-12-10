@@ -15,7 +15,10 @@ const TuitItem = (
             "time": "2h",
             "title": "Tesla Cybertruck lands on Mars and",
             "image": "/images/sample.gif",
-            "liked":false
+            "liked":false,
+            "disliked":false,
+            "likes":0,
+            "dislikes":0
         }
     }
 ) => {
@@ -35,7 +38,8 @@ const TuitItem = (
         } else {
             newPost = {
                 ...post,
-                dislikes: post.dislikes + 1
+                dislikes: post.dislikes + 1,
+                disliked: true
             }
         }
         dispatch(updateTuitThunk(newPost))
